@@ -8,8 +8,24 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State private var gameList = ["LOL","Valorant","R6"]
+    
     var body: some View {
-        Text("HOME!")
+        VStack {
+            HeadLineText()
+            NavigationView {
+                List {
+                    
+                }
+            }
+        }
+    }
+}
+
+struct HeadLineText: View {
+    var body: some View {
+        Text("Player Stats")
+            .bold().font(Font(UIFont.systemFont(ofSize: 30)))
     }
 }
 

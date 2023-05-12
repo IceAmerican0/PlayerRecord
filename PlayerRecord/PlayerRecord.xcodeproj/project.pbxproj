@@ -17,6 +17,10 @@
 		69AC68502A0BCB3000297BE7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AC684F2A0BCB3000297BE7 /* HomeView.swift */; };
 		69AC68532A0BCC6E00297BE7 /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AC68522A0BCC6E00297BE7 /* HomeTabView.swift */; };
 		69AC68552A0BCCDD00297BE7 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AC68542A0BCCDD00297BE7 /* ProfileView.swift */; };
+		69AC68592A0D171300297BE7 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AC68582A0D171300297BE7 /* HTTPMethod.swift */; };
+		69AC685B2A0D176D00297BE7 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AC685A2A0D176D00297BE7 /* NetworkError.swift */; };
+		69AC685D2A0D1C2A00297BE7 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AC685C2A0D1C2A00297BE7 /* Codable.swift */; };
+		69AC685F2A0D1F0A00297BE7 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AC685E2A0D1F0A00297BE7 /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,10 @@
 		69AC684F2A0BCB3000297BE7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		69AC68522A0BCC6E00297BE7 /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
 		69AC68542A0BCCDD00297BE7 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		69AC68582A0D171300297BE7 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		69AC685A2A0D176D00297BE7 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		69AC685C2A0D1C2A00297BE7 /* Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
+		69AC685E2A0D1F0A00297BE7 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +173,10 @@
 		69AC68562A0BCD6500297BE7 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				69AC685E2A0D1F0A00297BE7 /* API.swift */,
+				69AC68582A0D171300297BE7 /* HTTPMethod.swift */,
+				69AC685A2A0D176D00297BE7 /* NetworkError.swift */,
+				69AC685C2A0D1C2A00297BE7 /* Codable.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -307,9 +319,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				69AC68502A0BCB3000297BE7 /* HomeView.swift in Sources */,
+				69AC685B2A0D176D00297BE7 /* NetworkError.swift in Sources */,
+				69AC685D2A0D1C2A00297BE7 /* Codable.swift in Sources */,
 				69AC68262A0BC9D200297BE7 /* ContentView.swift in Sources */,
+				69AC68592A0D171300297BE7 /* HTTPMethod.swift in Sources */,
 				69AC68552A0BCCDD00297BE7 /* ProfileView.swift in Sources */,
 				69AC68242A0BC9D200297BE7 /* PlayerRecordApp.swift in Sources */,
+				69AC685F2A0D1F0A00297BE7 /* API.swift in Sources */,
 				69AC68532A0BCC6E00297BE7 /* HomeTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
