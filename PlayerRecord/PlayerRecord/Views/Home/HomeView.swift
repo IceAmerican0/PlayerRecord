@@ -7,15 +7,21 @@
 
 import SwiftUI
 
+enum gameList {
+    case LOL
+    case Valorant
+    case R6
+}
+
 struct HomeView: View {
-    @State private var gameList = ["LOL","Valorant","R6"]
-    
     var body: some View {
         VStack {
             HeadLineText()
-            NavigationView {
-                List {
-                    
+            HStack {
+                NavigationView {
+                    List {
+                        
+                    }
                 }
             }
         }

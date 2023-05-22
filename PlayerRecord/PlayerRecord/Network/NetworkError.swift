@@ -8,6 +8,9 @@
 import Foundation
 
 public enum NetworkError: Error {
+    case invalidateURL
+    case invalidStatusCode
+    case noConnectedInternet
     case emptyResponse
     case error(Error)
     case invalidateError
