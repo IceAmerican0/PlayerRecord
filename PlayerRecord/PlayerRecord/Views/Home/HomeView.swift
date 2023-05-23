@@ -7,31 +7,39 @@
 
 import SwiftUI
 
-enum gameList {
-    case LOL
-    case Valorant
-    case R6
+enum gameList: String, CaseIterable {
+    case LOL = "LOL"
+    case Valorant = "Valorant"
+    case R6 = "R6"
 }
 
 struct HomeView: View {
+    @State private var selection: gameList = .LOL
+    @State private var nickName: String = ""
+    
     var body: some View {
         VStack {
-            HeadLineText()
+            SelectedMainView()
+            
             HStack {
-                NavigationView {
-                    List {
-                        
-                    }
+                TextField("Enter your nickName", text: $nickName)
+            }
+            
+            HStack {
+                ForEach(gameList.allCases, id: \.rawValue) { list in
+                    Text(list.rawValue)
                 }
             }
         }
     }
 }
 
-struct HeadLineText: View {
+struct SelectedMainView: View {
+    
     var body: some View {
-        Text("Player Stats")
-            .bold().font(Font(UIFont.systemFont(ofSize: 30)))
+        VStack {
+            Image(systemName: "star.fill")
+        }
     }
 }
 

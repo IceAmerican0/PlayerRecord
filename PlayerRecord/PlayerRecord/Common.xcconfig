@@ -1,0 +1,12 @@
+//
+//  Common.xcconfig
+//  PlayerRecord
+//
+//  Created by 박성준 on 2023/05/23.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+// API Keys
+RIOT_KEY = "RGAPI-81efb98b-63f9-4927-83cf-9be78a894cdb"
