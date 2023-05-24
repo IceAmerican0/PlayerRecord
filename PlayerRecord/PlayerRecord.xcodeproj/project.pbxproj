@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5C89CDB12A1211860054A1D1 /* RequestParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C89CDB02A1211860054A1D1 /* RequestParameter.swift */; };
 		5C89CDB42A1B51AE0054A1D1 /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C89CDB32A1B51AE0054A1D1 /* NetworkServiceTests.swift */; };
+		5CEE2E0B2A1D916E00B17BCA /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEE2E0A2A1D916E00B17BCA /* Urls.swift */; };
+		5CEE2E0F2A1E07C200B17BCA /* LOLSummonerByNameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEE2E0E2A1E07C100B17BCA /* LOLSummonerByNameModel.swift */; };
 		69AC68242A0BC9D200297BE7 /* PlayerRecordApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AC68232A0BC9D200297BE7 /* PlayerRecordApp.swift */; };
 		69AC68262A0BC9D200297BE7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AC68252A0BC9D200297BE7 /* ContentView.swift */; };
 		69AC68282A0BC9D300297BE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69AC68272A0BC9D300297BE7 /* Assets.xcassets */; };
@@ -45,6 +47,8 @@
 /* Begin PBXFileReference section */
 		5C89CDB02A1211860054A1D1 /* RequestParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestParameter.swift; sourceTree = "<group>"; };
 		5C89CDB32A1B51AE0054A1D1 /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
+		5CEE2E0A2A1D916E00B17BCA /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Urls.swift; path = PlayerRecordTests/Network/Urls.swift; sourceTree = SOURCE_ROOT; };
+		5CEE2E0E2A1E07C100B17BCA /* LOLSummonerByNameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LOLSummonerByNameModel.swift; path = PlayerRecordTests/Network/LOLSummonerByNameModel.swift; sourceTree = SOURCE_ROOT; };
 		699683C22A1CE3D3001510E6 /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
 		69AC68202A0BC9D200297BE7 /* PlayerRecord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayerRecord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69AC68232A0BC9D200297BE7 /* PlayerRecordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerRecordApp.swift; sourceTree = "<group>"; };
@@ -171,6 +175,7 @@
 		69AC684E2A0BCAC900297BE7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5CEE2E0E2A1E07C100B17BCA /* LOLSummonerByNameModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -200,6 +205,7 @@
 		69AC68572A0BCD9000297BE7 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				5CEE2E0A2A1D916E00B17BCA /* Urls.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -338,10 +344,12 @@
 				5C89CDB12A1211860054A1D1 /* RequestParameter.swift in Sources */,
 				69AC685B2A0D176D00297BE7 /* NetworkError.swift in Sources */,
 				69AC685D2A0D1C2A00297BE7 /* Codable.swift in Sources */,
+				5CEE2E0B2A1D916E00B17BCA /* Urls.swift in Sources */,
 				69AC68262A0BC9D200297BE7 /* ContentView.swift in Sources */,
 				69AC68592A0D171300297BE7 /* HTTPMethod.swift in Sources */,
 				69AC68552A0BCCDD00297BE7 /* ProfileView.swift in Sources */,
 				69AC68242A0BC9D200297BE7 /* PlayerRecordApp.swift in Sources */,
+				5CEE2E0F2A1E07C200B17BCA /* LOLSummonerByNameModel.swift in Sources */,
 				69AC685F2A0D1F0A00297BE7 /* API.swift in Sources */,
 				69AC68532A0BCC6E00297BE7 /* HomeTabView.swift in Sources */,
 			);

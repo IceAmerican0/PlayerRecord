@@ -16,13 +16,31 @@ enum gameList: String, CaseIterable {
 struct HomeView: View {
     @State private var selection: gameList = .LOL
     @State private var nickName: String = ""
+    @State private var showAlert = false
     
     var body: some View {
         VStack {
             SelectedMainView()
             
             HStack {
-                TextField("Enter your nickName", text: $nickName)
+                TextField("Enter your nickname", text: $nickName)
+                Button {
+                    if nickName == "" {
+                        showAlert.toggle()
+                    } else {
+                        Task {
+                                
+                        }
+                    }
+                } label: {
+                    Text("Search")
+                }
+                .alert(isPresented: $showAlert) {
+                    Alert(
+                        title: Text("Input nickname!"),
+                        dismissButton: .default(Text("OK"))
+                    )
+                }
             }
             
             HStack {
